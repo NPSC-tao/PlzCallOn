@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'app/index'
   get '/' => 'home#top'
   ActiveAdmin.routes(self)
   devise_for :users, controllers: {
